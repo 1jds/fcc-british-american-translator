@@ -5,10 +5,6 @@ const britishOnly = require('./british-only.js')
 
 class Translator {
 
-  capitaliseWords(string) {
-    return string.replace(/\b\w/g, (match) => match.toUpperCase());
-  }
-
   translate(text, locale) {
     let translation = text;
 
@@ -17,17 +13,11 @@ class Translator {
       for (const property in americanOnly) {
         const propertyRegEx = new RegExp(`\\b${property}\\b`, 'gi')
         translation = translation.replaceAll(propertyRegEx, `<span class="highlight">${americanOnly[property]}</span>`);
-
-        // I was handling uppercase and lowercase, but I noticed that the FCC sample didn't do this, and I was adding unnecessary comlexity for the purposes of this task.
-        // let propertyCapitalised = this.capitaliseWords(property);
-        // translation = translation.replaceAll(propertyCapitalised, `<span class="highlight">${this.capitaliseWords(americanOnly[property])}</span>`);
       }
 
       for (const property in americanToBritishSpelling) {
         const propertyRegEx = new RegExp(`\\b${property}\\b`, 'gi')
         translation = translation.replaceAll(propertyRegEx, `<span class="highlight">${americanToBritishSpelling[property]}</span>`);
-        // let propertyCapitalised = property.charAt(0).toUpperCase() + property.slice(1);
-        // translation = translation.replaceAll(propertyCapitalised, `<span class="highlight">${americanToBritishSpelling[property].charAt(0).toUpperCase() + americanToBritishSpelling[property].slice(1)}</span>`);
       }
 
       for (const property in americanToBritishTitles) {
@@ -50,18 +40,11 @@ class Translator {
       for (const property in britishOnly) {
         const propertyRegEx = new RegExp(`\\b${property}\\b`, 'gi')
         translation = translation.replaceAll(propertyRegEx, `<span class="highlight">${britishOnly[property]}</span>`);
-        
-        
-        // let propertyCapitalised = property.charAt(0).toUpperCase() + property.slice(1);
-        // translation = translation.replaceAll(propertyCapitalised, `<span class="highlight">${britishOnly[property].charAt(0).toUpperCase() + britishOnly[property].slice(1)}</span>`);
       }
 
       for (const property in americanToBritishSpelling) {
         const propertyRegEx = new RegExp(`\\b${americanToBritishSpelling[property]}\\b`, 'gi')
         translation = translation.replaceAll(propertyRegEx, `<span class="highlight">${property}</span>`);
-        
-        // let valueCapitalised = americanToBritishSpelling[property].charAt(0).toUpperCase() + americanToBritishSpelling[property].slice(1);
-        // translation = translation.replaceAll(valueCapitalised, `<span class="highlight">${property.charAt(0).toUpperCase() + property.slice(1)}</span>`);
       }
 
       for (const property in americanToBritishTitles) {
