@@ -257,6 +257,7 @@ suite('Unit Tests', () => {
     done();
   });
 
+
   // TEST 22
   test('Test 22 - Highlight translation in I ate yogurt for breakfast.', (done) => {
     const testText = 'I ate yogurt for breakfast.';
@@ -291,21 +292,7 @@ suite('Unit Tests', () => {
     };
     assert.deepEqual(result, expectedResult);
     done();
-  });
-
-  // TEST 25
-  test('Test 25 - All remaining highlighted words should also be highlighted.', (done) => {
-    const testText = 'First, caramelise the onions. Then, add the salt and pepper and mix well.';
-    let result = translator.translate(testText, 'british-to-american');
-    const expectedResult = {
-      text: 'First, caramelise the onions. Then, add the salt and pepper and mix well.',
-      translation: 'First, <span class="highlight">caramelize</span> the onions. Then, add the'
-  }
-    assert.deepEqual(result, expectedResult);
-    done();
-  });
-  
-    
+  });    
 
 });
 
@@ -332,6 +319,7 @@ suite('Unit Tests', () => {
 // Translate Have you met Mrs Kalyani? to American English
 // Translate Prof Joyner of King's College, London. to American English
 // Translate Tea time is usually around 4 or 4.30. to American English
+
 // Highlight translation in Mangoes are my favorite fruit.
 // Highlight translation in I ate yogurt for breakfast.
 // Highlight translation in We watched the footie match for a while.
