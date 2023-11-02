@@ -1,0 +1,7 @@
+<svg id="svg" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="53%" y1="0%" x2="47%" y2="100%"><stop offset="5%" stop-color="#8ed1fc"></stop><stop offset="95%" stop-color="#0099ff"></stop></linearGradient></defs><path d="M 0,700 C 0,700 0,350 0,350 C 123.5,393.42857142857144 247,436.85714285714283 357,440 C 467,443.14285714285717 563.5000000000001,406 699,356 C 834.4999999999999,306 1009,243.14285714285714 1139,240 C 1269,236.85714285714286 1354.5,293.42857142857144 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)"></path></svg>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L60,266.7C120,245,240,203,360,197.3C480,192,600,224,720,224C840,224,960,192,1080,202.7C1200,213,1320,267,1380,293.3L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#0099ff" fill-opacity="1" d="M0,288L60,266.7C120,245,240,203,360,197.3C480,192,600,224,720,224C840,224,960,192,1080,202.7C1200,213,1320,267,1380,293.3L1440,320L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+</svg> -->
