@@ -18,17 +18,18 @@
   			American / British English Translator
   		</h1>
       <p class="tag-line-to-h1 font-white">
-        This is a limited translator for American to British English. It handles titular, spelling, and lexical differences.
+        Handles titular, spelling, and lexical differences.
       </p>
   	</header>
   	<div class="container">
   		<div class="form-container">
   			<textarea
+            class="input-text-textarea"
             rows="10"
             cols="60"
             id="text-input"
-          >
-        </textarea>
+            placeholder="Enter text to translate..."
+          ></textarea>
         <br />
         <select id="locale-select">
           <option value="american-to-british">American to British</option>
@@ -38,7 +39,7 @@
       </div>
       <div id="output-container">
         <div id="solution-container">
-          Translated Sentence:
+          Translated Sentence...
           <div id="translated-sentence"></div>
           <div id="error-msg"></div>
         </div>
